@@ -1,0 +1,156 @@
+button {
+    height: 48px;
+    width: 79px;
+    background-color: #6034db;
+    color: white;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 4px 10px gainsboro;
+cursor: pointer; }
+    button:focus {
+        transform: scale(1.09);
+      outline: none; }
+  
+      button:hover{
+
+    filter: brightness(100%);
+    }
+  .operator {
+    color: white;
+    font-size: 1.7em; }
+  
+  .calc-num {
+    font-size: 1.7em;
+    background-color: #ffffff;
+    color: #1a1a1a; }
+  
+  .clip-btn, #editIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 3%;
+    padding: 4%;
+    color: red;
+    cursor: pointer;
+    font-size: 12px;
+    opacity: 0.6; }
+  
+  #editIcon {
+    right: 8%; }
+  
+  html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 99.7%;
+    background-color: #eeeded;
+    color: #1a1a1a;
+    font-family: "proximanova", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media only screen and (max-width: 800px) {
+      body {
+        width: 100%; } }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .container #clipBoard {
+      width: 223px;
+      padding: 0;
+      overflow: hidden; }
+      .container #clipBoard .clip {
+        min-height: 29px;
+        list-style: none;
+        background-color: white;
+        position: relative;
+        padding: 1px 0;
+        margin: 7px 0; }
+        .container #clipBoard .clip li {
+          margin: 10px;
+          cursor: pointer; }
+        .container #clipBoard .clip h4 {
+          margin: 0 0 5px 0; }
+      .container #clipBoard p {
+        margin: 9% 0 9% 6%; }
+    .container #cliper {
+      float: right;
+      height: 62px;
+      width: 126px;
+      margin: 4% 0; }
+    .container input {
+      width: 70%;
+      background: transparent;
+      border: none;
+      outline: none; }
+    @media only screen and (max-width: 800px) {
+      .container {
+        width: 100%; } }
+  
+  .calculator {
+    height: 444px;
+    width: 404px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 4px 60px gainsboro;
+    margin: 0 4%; }
+    .calculator .keypad {
+      height: 332px;
+      width: 404px;
+      background-color: #f3f3f3;
+      color: #1a1a1a;
+      padding: 1px; }
+      .calculator .keypad .row {
+        display: flex;
+        padding: 0 5%;
+        margin-top: 2.5%; }
+      .calculator .keypad .first-row {
+        margin-top: 4%; }
+  
+  .calConsole {
+    height: 75px;
+    width: 364px;
+    background-color: #f2f2f2;
+    color: #1a1a1a;
+    margin: 7% auto;
+    font-size: 12px;
+    border-radius: 10px;
+    text-align: right; }
+    .calConsole input {
+      float: left; }
+    .calConsole div {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 7px 0; }
+    .calConsole #nameClip {
+      cursor: pointer; }
+    .calConsole #equationDisplayer {
+      max-width: 92%;
+      overflow: hidden; }
+    .calConsole #resultDisplayer {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 0 9px;
+      display: inline-block;
+      max-width: 92%;
+      overflow: hidden; }
+  
+  #hiddenInput {
+    position: absolute;
+    top: -500px; }
+    @media only screen and (max-width: 800px) {
+      #hiddenInput {
+        display: none; } }

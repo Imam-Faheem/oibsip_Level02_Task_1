@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+</head>
+<body>
+<h3 style="text-align: center; margin-bottom: 39px; font-size: 2rem;">My Calculator</h3>
+
+    <div class='container'>
+        <ul id="clipBoard">
+          <p>Calculations</p>
+        </ul>
+        <div class='calculator'>
+          <div class='calConsole'>
+            <div>
+              <span id="nameClip">Edit Me</span>
+              <span id="equationDisplayer">0</span>
+            </div>
+            <span id="resultDisplayer">0</span>
+          </div>
+          <div class="keypad">
+            <div class="row first-row">
+              <button class="button" id="clearLast" value="CE">CE</button>
+              <button class="button" id="allClear" value="AC">AC</button>
+              <button class="button" id="keyCode37" value="%">%</button>
+              <button class="button operator" id="keyCode47" value="/">÷</button>
+            </div>
+            <div class="row">
+              <button class="button calc-num" id="keyCode55" value="7">7</button>
+              <button class="button calc-num" id="keyCode56" value="8">8</button>
+              <button class="button calc-num" id="keyCode57" value="9">9</button>
+              <button class="button operator" id="keyCode42" value="*">x</button>
+            </div>
+            <div class="row">
+              <button class="button calc-num" id="keyCode52" value="4">4</button>
+              <button class="button calc-num" id="keyCode53" value="5">5</button>
+              <button class="button calc-num" id="keyCode54" value="6">6</button>
+              <button class="button operator" id="keyCode45" value="-">-</button>
+            </div>
+            <div class="row">
+              <button class="button calc-num" id="keyCode49" value="1">1</button>
+              <button class="button calc-num" id="keyCode50" value="2">2</button>
+              <button class="button calc-num" id="keyCode51" value="3">3</button>
+              <button class="button operator" id="keyCode43" value="+">+</button>
+      
+            </div>
+            <div class="row">
+              <button class="button calc-num" id="keyCode48" value="0">0</button>
+              <button class="button calc-num" id="keyCode480" value="00">00</button>
+              <button class="button calc-num" id="keyCode46" value=".">.</button>
+              <button class="button operator" id="keyCode13" value="=">=</button>
+            </div>
+          </div>
+        </div>
+        <button id="cliper">SAVE</button>
+      </div>
+      <input id="hiddenInput" type="text" autofocus>
+      <footer>
+      
+      </footer>
+
+      <script src="script.js"></script>
+    
+</body>
+</html>
